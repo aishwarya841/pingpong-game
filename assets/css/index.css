@@ -1,0 +1,59 @@
+:root{
+    --time-duration : 10s;
+}
+
+#container{
+    position: relative;
+}
+
+
+#ball {
+    background-color: red;
+    border-radius: 50%;
+    width:30px;
+    height:30px;
+    position: fixed;
+    top: 20px;
+
+}
+
+#rod1, #rod2{
+    position: fixed;
+    width: 300px;
+    height: 30px;
+    border-radius: 1rem 1rem 1rem 1rem;
+    left : 40%;
+    text-align: center;
+    vertical-align: center;
+}
+
+#rod1{
+    background-color: blueviolet;
+    top : 0px;
+}
+
+#rod2{
+    background-color: aqua;
+    bottom: 0px;
+}
+
+.animate-top-right
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(1000px) translateY(-1000px);
+}
+.animate-bottom-right
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(1000px) translateY(1000px);
+}
+.animate-top-left
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(-1000px) translateY(-1000px);
+}
+.animate-bottom-left
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(-1000px) translateY(1000px);
+}
